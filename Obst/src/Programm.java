@@ -6,6 +6,7 @@ public class Programm {
         banane.setGewicht(60);
         banane.setZuckerInhalt(20);
         banane.setJahreszeit("sommer");
+        banane.setKrummung(90);
 
         System.out.println( "Name " +  banane.getName());
         System.out.println("Gewicht " +  banane.getGewicht() + "g");

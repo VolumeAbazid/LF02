@@ -41,4 +41,5 @@ public abstract class Obst {
     public void setZuckerInhalt(int zuckerInhalt) {
         this.zuckerInhalt = zuckerInhalt;
     }
+
 }
