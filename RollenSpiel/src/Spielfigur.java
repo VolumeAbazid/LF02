@@ -26,28 +26,28 @@ public class Spielfigur {
     }
 
     public void laufen() throws KeineKraftException {
-        if (getStaerkepunkte() - 1 >= 0) {
+        if (getStaerkepunkte()>= 1) {
             setStaerkepunkte(getStaerkepunkte() - 1);
-            System.out.println(getName() + "laufen");
+            System.out.println(getName() + "läuft");
         }
         else {
-            throw new KeineKraftException(name, "laufen");
+            throw new KeineKraftException(name, "läuft");
         }
     }
 
     public void klettern() throws KeineKraftException {
-        if (getStaerkepunkte() - 2 >= 0) {
+        if (getStaerkepunkte()>= 2) {
             setStaerkepunkte(getStaerkepunkte() - 2);
-            System.out.println(getName() + "klettern");
+            System.out.println(getName() + "klettert");
         } else {
             throw new KeineKraftException(name, "klettern");
         }
     }
 
     public void kaempfen() throws KeineKraftException {
-        if (getStaerkepunkte() - 3 >= 0) {
+        if (getStaerkepunkte() >= 3) {
             setStaerkepunkte(getStaerkepunkte() - 3);
-            System.out.println(getName() + "kämpfen");
+            System.out.println(getName() + "kämpft");
         } else {
             throw new KeineKraftException(name, "kämpfen");
         }
